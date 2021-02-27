@@ -12,9 +12,10 @@ def find_password():
         with open("data.json", "r") as data_file:
             data = json.load(data_file)
             if website in data:
-                information = data.get(website)
-                messagebox.askokcancel(title="Found", message=f"Website: {website}\n"
-                                                              f"Password: {information.get('password')}")
+                email = data[website]['email']
+                password = data[website]['password']
+                messagebox.showinfo(title="Found", message=f"Username: {email}\n"
+                                                           f"Password: {password}")
             else:
                 messagebox.askokcancel(title="Error", message="No details for the website exists")
     except FileNotFoundError:
