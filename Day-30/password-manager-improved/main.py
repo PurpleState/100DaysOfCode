@@ -17,9 +17,9 @@ def find_password():
                 messagebox.showinfo(title="Found", message=f"Username: {email}\n"
                                                            f"Password: {password}")
             else:
-                messagebox.askokcancel(title="Error", message="No details for the website exists")
+                messagebox.showinfo(title="Error", message="No details for the website exists")
     except FileNotFoundError:
-        messagebox.askokcancel(title="Error", message="No Data File Found")
+        messagebox.showinfo(title="Error", message="No Data File Found")
 
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
