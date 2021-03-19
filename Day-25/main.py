@@ -32,3 +32,11 @@ print(data.condition)
 
 #get data in row
 data[data.day=="Monday"]
+print(data[data.temp==data.temp.max()])
+
+#create data frame from scratch
+data_dict = {
+  "students":["Amy","James","Angela"],
+  "scores":[76, 56, 65]x
+}
+pandas.DataFrame(data_dict)
