@@ -22,3 +22,8 @@ Celebrate each day
 
 
 Use repl for hosting and stackoverflow when stuck 
+
+I can find all the exercises at 
+https://replit.com/repls/folder/Day%201
+
+
